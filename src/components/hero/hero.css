@@ -1,0 +1,145 @@
+
+.heroContainer{
+
+    background-color: #F2921D;
+    height: 110vh;
+}
+.topHead{
+    display: flex;
+    justify-content:space-between;
+    font-family: 'Telex', sans-serif;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    align-items: baseline;
+    position: fixed;
+    background-color: #F2921D;
+    width: 100%;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100px);
+    animation: topHead var(--animationtime) ease-in var(--topHeadDelay) forwards;
+    z-index: 99;
+}
+.topHead.active{
+    background-color: white;
+    color: #F2921D;
+}
+.menuList{
+    padding-right: 4rem;
+        list-style: none;
+        display: flex;
+        cursor: pointer;
+    
+}
+
+.heroContent{
+    padding-top: 6rem;
+    display: flex;
+    color: white;
+    height: 75vh;
+}
+.heroInfo{
+    width: 60vw;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding-left: 2rem;
+    justify-content: space-between;
+}
+.heroInfoHi,.heroInfoName{
+    font-family: 'Anton', sans-serif;
+}
+.heroInfoName{
+    font-size: 104px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: nameAnimation var(--animationtime) ease-in forwards;
+    transform: scale(0)
+
+}
+.heroInfoHi{
+    font-size:40px;
+    padding-top: 5rem;
+    transform: translateX(-50vw);
+    animation:hiAnimation var(--animationtime) ease-in var(--heroContentDelay) forwards;
+}
+.heroP{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    
+}
+.heroInfoIntro{
+    font-size: 20px;
+    font-family: 'Telex', sans-serif;
+    animation:pAnimation var(--animationtime) ease-in var(--heroContentDelay) forwards;
+    transform: translateX(-50vw);
+
+}
+.heroRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+.heroS{
+    height: 10rem;
+    width: 30vw;
+    width: 10rem;
+    border-radius: 50%;
+    border:1px black solid;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    display: flex;
+
+}
+.heroS:hover{
+    transform: rotateY(180deg);
+
+}
+/* .heroS:active{
+   
+   transform: rotateY(180deg);
+
+} */
+.avatar{
+    width:15vw;
+    transition: transform 0.5s;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: 2s;
+    
+}
+
+.avatarSpan{
+transform: rotateY(180deg);
+
+top: 4rem;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+@keyframes topHead{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes nameAnimation{
+    
+    100%{
+        transform: scale(1)
+    }
+}
+@keyframes hiAnimation{
+    100%{
+        transform: translateX(0px)
+    }
+}
+@keyframes pAnimation{
+    100%{
+        transform: translateX(0px)
+    }
+}

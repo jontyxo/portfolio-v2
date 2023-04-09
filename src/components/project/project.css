@@ -1,0 +1,84 @@
+.project{
+   width: 70vw;
+border-radius:5px;
+margin: 0rem 0rem 8rem 0rem;
+display: flex;
+justify-content: center;
+
+
+}
+.project:nth-child(even){
+flex-direction: row-reverse;
+
+}
+.project:nth-child(even) > .projectImg{
+    width: 24rem;
+}
+.projectImg{
+    cursor: pointer;
+    padding: 2px;
+    background-clip: 'padding-box';
+    height: 12rem;
+    width: 28rem;
+    overflow: hidden;
+    transform: scale(1);
+    transition: 1.5s ease-in-out;
+    border-radius: 8px;
+}
+.projectName{
+    color: #656565   ;
+    font-family: 'Telex', sans-serif;
+font-size: 22px;
+}
+.projectImg:hover { 
+    opacity: 1.5;
+    transform: scale(1.2);
+    transition: 1.5s ease-in-out;
+    filter: brightness(0.4);
+  }
+.imgDiv{
+    width: 100%;
+   
+    transition: 1.5s ease-in-out;
+    transform: scale(1);
+overflow: hidden;
+}
+.imgDiv:hover{
+    transform: scale(0.9);
+    transition: 1.5s ease-in-out;
+
+
+}
+
+.rightDiv{
+    font-family: 'Righteous', cursive;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: #fff;
+    z-index: 98;
+    position: relative;
+    bottom: 5rem;
+}
+
+
+
+.leftDiv{
+    flex-direction: column;
+    display: flex;
+}
+@media only screen and (max-width:420px){
+    .project, .project:nth-child(even){
+        flex-direction: column;
+    }
+ 
+    h3{
+        margin: 0;
+        margin-top: 10px;
+    }
+    .projectImg{
+        height:7rem;
+        width:18rem
+    }
+    .project:nth-child(even) > .projectImg{
+        width: 18rem;
+    }
+}

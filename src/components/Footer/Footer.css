@@ -1,0 +1,12 @@
+.Footer{
+    background-color: #F2921D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0rem 0rem 0rem;
+}
+.footerp{
+    color: white;
+    font-family: 'Telex';
+    margin-bottom: 0px;
+}

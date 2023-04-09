@@ -1,0 +1,67 @@
+.contactClass{
+    font-family: 'Telex', sans-serif;
+   color:#F2921D; 
+   font-size: 48px;
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+.ackform{
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+input{
+    background:transparent;
+    margin: 1rem ;
+    padding: 1rem;  
+    border: none;
+    color: white;
+    width: 25rem;
+}
+input:focus{
+    outline-color: #F2921D;
+
+}
+input:hover{
+    outline-color: #F2921D;
+
+}
+textarea{
+    background:transparent;
+    margin: 1rem ;
+    padding: 1rem;  
+    border: none;
+    color: white;
+    width: 25rem;
+}
+textarea:focus{
+    outline-color: #F2921D;
+
+}
+.formHead{
+    position:relative; 
+    top:5rem;
+    left:20rem;
+}
+.threedForm{
+    width:40%;
+     height:100%;
+}
+.leftCDiv{
+    width:60vw;
+}
+.formButton{
+    width:100%;
+    outline: 1px solid #F2921D;
+    color: #F2921D;
+}
+.formButton:hover{
+    background-color:#F2921D;
+    color: aliceblue;
+}

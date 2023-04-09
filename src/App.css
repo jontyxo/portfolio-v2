@@ -1,0 +1,19 @@
+
+
+::-webkit-scrollbar{
+  width: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(white,#F2921D);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+:root{
+
+  --animationtime:400ms;
+  
+  --topHeadDelay: calc(800ms + var(--animationtime));
+  --heroContentDelay: calc(500ms + var(--animationtime));
+
+  }
