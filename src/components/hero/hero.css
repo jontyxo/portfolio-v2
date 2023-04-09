@@ -4,32 +4,7 @@
     background-color: #F2921D;
     height: 110vh;
 }
-.topHead{
-    display: flex;
-    justify-content:space-between;
-    font-family: 'Telex', sans-serif;
-    color: aliceblue;
-    padding: 1rem 2rem;
-    align-items: baseline;
-    position: fixed;
-    background-color: #F2921D;
-    width: 100%;
-    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
-    transform: translateY(-100px);
-    animation: topHead var(--animationtime) ease-in var(--topHeadDelay) forwards;
-    z-index: 99;
-}
-.topHead.active{
-    background-color: white;
-    color: #F2921D;
-}
-.menuList{
-    padding-right: 4rem;
-        list-style: none;
-        display: flex;
-        cursor: pointer;
-    
-}
+
 
 .heroContent{
     padding-top: 6rem;

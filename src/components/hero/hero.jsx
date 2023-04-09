@@ -1,32 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./hero.css"
 import avatar from "../../images/avatar-png.png"
 
 const Hero = () => {
-    const [topbar,setTopbar]=useState(false);
-    const changeTopbar=()=>{
-        if(window.scrollY>10){
-            setTopbar(true);
-            
-        } else{
-            setTopbar(false);
-        
-        }
-    }
-    window.addEventListener('scroll', changeTopbar)
+   
   return (
     <div className="heroContainer">
-        <div className={topbar?"topHead active":"topHead"}>
-            <span>joyesh.dev</span>
-            <li className="menuList">
-                <ul>HOME</ul>
-                <ul>ABOUT</ul>
-                <ul>WORK</ul>
-                <ul>CONTACT</ul>
-                <ul>MY RESUME</ul>
-
-            </li>
-        </div>
+       
         <div className="heroContent">
             <div className="heroInfo">
             <p className="heroP">
